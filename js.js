@@ -49,7 +49,9 @@ function Employee(fnm, dep, lev, Ir,) {
     this.ImageURL = Ir;
     this.salary = randomSalary(this.level);
 }
-
+Employee.prototype.greeting = function () {
+    console.log(`employee name : ${this.fullname}                                                                                                                                                                                                   department :${this.department}                                                                      employee salary:${this.salary}`);
+}
 
 let employee1 = new Employee("Ghazi Samer", "Administration", "Senior", "https://bit.ly/3WqtuZG");
 let employee2 = new Employee("Lana Ali", "Finance", "Senior", "https://bit.ly/43nmr6t");
@@ -58,18 +60,18 @@ let employee4 = new Employee("Safi Walid", "Administration", "Mid-Senior", "http
 let employee5 = new Employee("Omar Zaid", "Development", "Senior", "https://bit.ly/3ooaxKI");
 let employee6 = new Employee("Rana Saleh", "Development", "Junior", "https://bit.ly/3MMjSFA");
 let employee7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "https://bit.ly/3OCPJKh");
-document.getElementById("t").innerHTML = `employee name: ${employee1.fullname} <br> department: ${employee1.department} <br> employee salary: ${employee1.salary} `;
-document.getElementById("y").innerHTML = `employee name: ${employee2.fullname}  <br> department: ${employee2.department} <br> employee salary: ${employee2.salary} `;
-document.getElementById("u").innerHTML = `employee name: ${employee3.fullname} <br>  department:${employee3.department} <br> employee salary: ${employee3.salary} `;
-document.getElementById("i").innerHTML = `employee name: ${employee4.fullname} <br>  department: ${employee4.department} <br> employee salary: ${employee4.salary} `;
-document.getElementById("o").innerHTML = `employee name: ${employee5.fullname} <br>  department: ${employee5.department} <br> employee salary: ${employee5.salary} `;
-document.getElementById("p").innerHTML = `employee name: ${employee6.fullname}<br>   department: ${employee6.department}<br>  employee salary: ${employee6.salary}`;
-document.getElementById("a").innerHTML = `employee name: ${employee7.fullname}  <br> department: ${employee7.department} <br> employee salary: ${employee7.salary} `;
 
 console.log(employee1);
+employee1.greeting();
 console.log(employee2);
+employee2.greeting();
 console.log(employee3);
+employee3.greeting();
 console.log(employee4);
+employee4.greeting();
 console.log(employee5);
+employee5.greeting();
 console.log(employee6);
+employee6.greeting();
 console.log(employee7);
+employee7.greeting();
