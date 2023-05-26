@@ -38,9 +38,7 @@ function randomSalary(level) {
     }
 }
 
-// let salary=min + Math.random() * (max - min)
-// let netSalary=salary-salary*7.5/100
-// return netSalary
+
 function Employee(fnm, dep, lev, Ir,) {
     this.Employeeid = uniqueFourDigitsEmployeeIdNumber();
     this.fullname = fnm;
@@ -50,7 +48,8 @@ function Employee(fnm, dep, lev, Ir,) {
     this.salary = randomSalary(this.level);
 }
 Employee.prototype.greeting = function () {
-    console.log(`employee name : ${this.fullname}                                                                                                                                                                                                   department :${this.department}                                                                      employee salary:${this.salary}`);
+    
+    document.write(`employee name : ${this.fullname}<br>department :${this.department} <br>employee salary:${this.salary}<br> <br>`);
 }
 
 let employee1 = new Employee("Ghazi Samer", "Administration", "Senior", "https://bit.ly/3WqtuZG");
