@@ -60,17 +60,45 @@ let employee5 = new Employee("Omar Zaid", "Development", "Senior", "https://bit.
 let employee6 = new Employee("Rana Saleh", "Development", "Junior", "https://bit.ly/3MMjSFA");
 let employee7 = new Employee("Hadi Ahmad", "Finance", "Mid-Senior", "https://bit.ly/3OCPJKh");
 
-console.log(employee1);
-employee1.greeting();
-console.log(employee2);
-employee2.greeting();
-console.log(employee3);
-employee3.greeting();
-console.log(employee4);
-employee4.greeting();
-console.log(employee5);
-employee5.greeting();
-console.log(employee6);
-employee6.greeting();
-console.log(employee7);
-employee7.greeting();
+// console.log(employee1);
+// employee1.greeting();
+// console.log(employee2);
+// employee2.greeting();
+// console.log(employee3);
+// employee3.greeting();/
+// console.log(employee4)/;
+// employee4.greeting();
+// console.log(employee5);
+// employee5.greeting();
+// console.log(employee6);
+// employee6.greeting();
+// console.log(employee7);
+// employee7.greeting();
+let dive=document.createElement("div");
+let body=document.getElementsByTagName("body")[0];
+body.appendChild(dive);
+let employename=document.createElement("h1");
+employename.textContent=` name: ${this.fullname}`;
+dive.appendChild(employename);
+let Employeeid=document.createElement("h3")
+Employeeid.textContent=`ID:${this.Employeeid}`;
+dive.appendChild(Employeeid);
+let departmentt=document.createElement("h4");
+departmentt.textContent=`department:${this.department}`;
+dive.appendChild(departmentt);
+let levelt=document.createElement("h5");
+levelt.textContent=`level:${this.level}`;
+dive.appendChild(levelt);
+let salary=document.createElement("h6")
+salary.textContent=this.salary;
+dive.appendChild(salary);
+let image=document.createElement("img");
+image.src=this.ImageURL;
+dive.appendChild(image);
+
+
+
+
+
+
+
